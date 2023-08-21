@@ -6,8 +6,14 @@ body {
 /* set up grid */
 .grid-container {
   display: grid;
-  grid-template-columns: 100%;
-  
+  grid-template-areas:
+  'header'
+  'text'
+  'carousel'
+  'about'
+  'contact'
+  'footer';
+}
   gap: 10px;
   background-color: pink;
   padding: 10px;
