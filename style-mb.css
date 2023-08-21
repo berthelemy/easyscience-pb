@@ -22,6 +22,10 @@ footer {
   padding: 10px;
 }
 
+.slideshow-container, .mySlides {
+  width: 100%;
+}
+
 .mySlides img {
   object-fit: contain;
 }
