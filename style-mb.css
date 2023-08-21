@@ -13,7 +13,7 @@ body {
   padding: 10px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) { /* Make into two columns for larger screens */
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
