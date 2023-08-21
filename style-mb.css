@@ -1,25 +1,9 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 
 /* set up grid */
-header {
-  grid-area: header;
-  background-color: cornflowerblue;
- }
-
-header nav ul{
-  margin-top: 0;
-  margin-left: 60%;
-  list-style: none;
-}
-  
-section#carousel { grid-area: carousel; }
-section#text { grid-area: text; }
-section#about {grid-area:about;}
-section#contact {grid-area:contact;}
-footer {
-  grid-area: footer;
-  text-align: center;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -33,6 +17,42 @@ footer {
   background-color: #2196F3;
   padding: 10px;
 }
+
+/* Set up individual grid items */
+
+header {
+  grid-area: header;
+  background-color: cornflowerblue;
+ }
+
+header nav ul {
+  margin-top: 0;
+  margin-left: 60%;
+  list-style: none;
+}
+
+header nav ul li {
+  float: left;
+  padding-left: 10%;
+}
+
+header a {
+  text-decoration: none;
+  text-shadow: 0px 0px 0px red;
+  color:lightgray;
+  font-size: 1.5rem;
+}
+  
+section#carousel { grid-area: carousel; }
+section#text { grid-area: text; }
+section#about {grid-area:about;}
+section#contact {grid-area:contact;}
+footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+
 
 .slideshow-container, .mySlides {
   width: 100%;
