@@ -7,7 +7,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 20vh 60vh 20vh;
+  grid-template-rows: 10vh 60vh 20vh 10vh;
   grid-template-areas:
     'header header'
     'text carousel'
