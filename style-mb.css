@@ -6,22 +6,29 @@ body {
 /* set up grid */
 .grid-container {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 10% 50% 30% 10%;
-  grid-template-areas:
+  grid-template-columns: 100%;
+  
+  gap: 10px;
+  background-color: pink;
+  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
     'header header'
     'text carousel'
     'about contact'
     'footer footer';
-  gap: 10px;
-  background-color: pink;
-  padding: 10px;
+  }
 }
 
 /* Set up individual grid items */
 
 header {
   grid-area: header;
+  padding: 1rem;
   background-color: cornflowerblue;
  }
 
@@ -34,7 +41,7 @@ header nav ul {
 
 header nav ul li {
   float: left;
-  padding-left: 10%;
+  padding-left: 5%;
 }
 
 header a {
@@ -63,7 +70,7 @@ section#contact {
 }
 footer {
   grid-area: footer;
-  padding: 1rem;
+  padding: 1rem 1rem 5rem 1rem;
   text-align: center;
 }
 
