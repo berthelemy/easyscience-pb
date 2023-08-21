@@ -1,6 +1,16 @@
 
 /* set up grid */
-header { grid-area: header; }
+header {
+  grid-area: header;
+  background-color: cornflowerblue;
+ }
+
+header nav ul{
+  margin-top: 0;
+  margin-left: 60%;
+  list-style: none;
+}
+  
 section#carousel { grid-area: carousel; }
 section#text { grid-area: text; }
 section#about {grid-area:about;}
@@ -13,6 +23,7 @@ footer {
 .grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-template-rows: 20vh 60vh 20vh;
   grid-template-areas:
     'header header'
     'text carousel'
