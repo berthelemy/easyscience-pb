@@ -5,6 +5,7 @@ body {
 
 /* set up grid */
 .grid-container {
+  background-color: pink;
   display: grid;
   grid-template-areas:
   'header'
@@ -13,7 +14,6 @@ body {
   'about'
   'contact'
   'footer';
-}
   gap: 10px;
   background-color: pink;
   padding: 10px;
