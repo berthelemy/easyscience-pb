@@ -1,26 +1,25 @@
-* {
-  box-sizing: border-box;
-}
 
-.header { grid-area: header; }
-.carousel { grid-area: carousel; }
-.text { grid-area: text; }
-.footer { grid-area: footer; }
+/* set up grid */
+header { grid-area: header; }
+section#carousel { grid-area: carousel; }
+section#text { grid-area: text; }
+section#about {grid-area:about;}
+section#contact {grid-area:contact;}
+.footer {
+  grid-area: footer;
+  text-align: center;
+}
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header'
     'carousel text'
+    'about contact'
     'footer footer';
   gap: 10px;
   background-color: #2196F3;
   padding: 10px;
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
+
